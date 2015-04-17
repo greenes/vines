@@ -1,0 +1,16 @@
+
+
+
+<p><%= form_tag "/", method: "get" do %>
+  <%= label_tag(:search, "Search for:") %>
+  <%= text_field_tag(:search) %>
+  <%= submit_tag("Search") %>
+<% end %></p>
+
+
+
+<video controls>
+  <source src="<%=@vine%>" type="video/ogg">
+  <source src="<%=@vine%>" type="video/mp4">
+  Your browser does not support the <code>video</code> element.
+</video>
